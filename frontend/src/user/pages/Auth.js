@@ -27,7 +27,7 @@ const Auth = () => {
         isValid: false,
       },
     },
-    false
+    false,
   );
 
   const switchModeHandler = () => {
@@ -37,7 +37,7 @@ const Auth = () => {
           ...formState.inputs,
           name: undefined,
         },
-        formState.inputs.email.isValid && formState.inputs.password.isValid
+        formState.inputs.email.isValid && formState.inputs.password.isValid,
       );
     } else {
       setFormData(
@@ -48,7 +48,7 @@ const Auth = () => {
             isValid: false,
           },
         },
-        false
+        false,
       );
     }
     setIsLoginMode((prevMode) => !prevMode);
